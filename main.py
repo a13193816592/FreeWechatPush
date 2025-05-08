@@ -156,11 +156,11 @@ def timetable(message):
 
 
 if __name__ == '__main__':
-    weather_report("青岛")
-    # timetable("第二教学楼十分钟后开始英语课")
+    weather_report("北京")
+    timetable("抖音作品编辑好了吗？")
 
-    # schedule.every().day.at("18:30").do(weather_report, "南京")
-    # schedule.every().monday.at("13:50").do(timetable, "第二教学楼十分钟后开始英语课")
-    #while True:
-    #    schedule.run_pending()
-    #    time.sleep(1)
+    schedule.every().day.at("14:30").do(weather_report, "北京")
+    schedule.every().monday.at("14:50").do(timetable, "抖音作品编辑好了吗？")
+    while True:
+       schedule.run_pending()
+       time.sleep(1)
